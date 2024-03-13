@@ -20,18 +20,18 @@
   margin-top: -1em;
   color: #4f4f4f;
 }
-.Container.time {
+ .time {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   color: #f0dbdb;
   width: 80%;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .timeline {
 
-  background-color: #1d27e4;
+  background-color: #19ac8c;
   width: 80%;
 
 }
@@ -45,6 +45,7 @@ input[type="range"] {
   .buttonsContainer{
     padding: 10px;
   }
+
 
   .player {
     display: flex;
@@ -66,19 +67,27 @@ input[type="range"] {
     font-weight: 800;
   }
   
-  
   .playlist {
     overflow-y: scroll;
   }
   
   .list-items {
     color: black;
-    background-color: rgb(226, 221, 144);
+    list-style-type: none;
+    background-color: rgb(252, 245, 146);
     padding: 10px 30px;
-    border-radius: 0.2rem ;
+    border-radius: 0.5rem ;
     cursor: pointer;
     font-weight: 600;
     opacity: 0.7;
+    margin:12px;
+    text-align: start;
+  }
+  .list-items:hover{
+    background-color: rgb(238, 232, 150);
+    padding: 8px 26px;
+    margin:14px;
+
   }
   .audioPlayer{
     position: fixed;
@@ -89,6 +98,36 @@ input[type="range"] {
   }
   .audioPlayer audio{
 padding: 5px 50px;
+width: 90%;
+margin: 5px;
   }
   
+  .upload {
+    position: relative;
+    overflow: hidden;
+    padding:20px;
+
+  }
+.uploadLabel{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8890af;
+  color: #fcf7f7; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.uploadLabel input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.uploadLabel:hover {
+  background-color: #99afbe; 
+}
  
+  
